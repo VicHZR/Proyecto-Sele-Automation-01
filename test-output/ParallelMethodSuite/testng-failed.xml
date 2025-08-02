@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="methods" name="Failed suite [ParallelMethodSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="methods" name="AllTests(failed)">
+    <classes>
+      <class name="tests.LoginTests">
+        <methods>
+          <include name="testLoginCamposEnBlanco"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.LoginTests -->
+    </classes>
+  </test> <!-- AllTests(failed) -->
+</suite> <!-- Failed suite [ParallelMethodSuite] -->

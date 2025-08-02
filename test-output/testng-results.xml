@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="5" total="6" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-02T03:48:00 PET" name="Default suite" finished-at="2025-08-02T03:48:35 PET" duration-ms="35414">
+    <groups>
+      <group name="functional">
+        <method signature="ResgisterTests.testRegistroExistoso()[pri:0, instance:tests.ResgisterTests@c94fd30]" name="testRegistroExistoso" class="tests.ResgisterTests"/>
+      </group> <!-- functional -->
+    </groups>
+    <test started-at="2025-08-02T03:48:00 PET" name="Default test" finished-at="2025-08-02T03:48:35 PET" duration-ms="35414">
+      <class name="tests.ResgisterTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ResgisterTests@c94fd30]" started-at="2025-08-02T03:48:00 PET" name="setUp" finished-at="2025-08-02T03:48:18 PET" duration-ms="18453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRegistroExistoso()[pri:0, instance:tests.ResgisterTests@c94fd30]" started-at="2025-08-02T03:48:18 PET" name="testRegistroExistoso" finished-at="2025-08-02T03:48:32 PET" duration-ms="13561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistroExistoso -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ResgisterTests@c94fd30]" started-at="2025-08-02T03:48:32 PET" name="tearDown" finished-at="2025-08-02T03:48:35 PET" duration-ms="3263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ResgisterTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

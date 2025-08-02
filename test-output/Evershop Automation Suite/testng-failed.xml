@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Evershop Automation Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Evershop Functional Tests(failed)">
+    <classes>
+      <class name="tests.LoginTests">
+        <methods>
+          <include name="TC_Login_04_unregisteredEmail"/>
+          <include name="TC_Login_02_invalidCredentials"/>
+          <include name="TC_Login_03_blankCredentials"/>
+          <include name="TC_Login_05_forgotPasswordFlow"/>
+          <include name="TC_Login_01_successfulLogin"/>
+        </methods>
+      </class> <!-- tests.LoginTests -->
+      <class name="tests.RegisterTests">
+        <methods>
+          <include name="TC_Register_02_missingRequiredFields"/>
+          <include name="TC_Register_03_invalidEmailFormat"/>
+          <include name="TC_Register_05_passwordConfirmationMismatch"/>
+          <include name="TC_Register_04_weakPassword"/>
+          <include name="TC_Register_01_successfulRegistration"/>
+          <include name="TC_Register_06_duplicateEmail"/>
+        </methods>
+      </class> <!-- tests.RegisterTests -->
+      <class name="tests.OrderTests">
+        <methods>
+          <include name="TC_Order_03_modifyProductQuantity"/>
+          <include name="TC_Order_04_successfulOrderCreation"/>
+          <include name="TC_Order_01_addProductToCart"/>
+          <include name="TC_Order_02_removeProductFromCart"/>
+        </methods>
+      </class> <!-- tests.OrderTests -->
+    </classes>
+  </test> <!-- Evershop Functional Tests(failed) -->
+</suite> <!-- Failed suite [Evershop Automation Suite] -->

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [ParallelTestSuite]">
+  <test thread-count="3" parallel="tests" name="IntegrationTests(failed)">
+    <groups>
+      <run>
+        <include name="integration"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.ResgisterTests">
+        <methods>
+          <include name="testCorreoElectronicoDuplicado"/>
+        </methods>
+      </class> <!-- tests.ResgisterTests -->
+      <class name="tests.OrderTests">
+        <methods>
+          <include name="testCreacionOrdenExitosa"/>
+        </methods>
+      </class> <!-- tests.OrderTests -->
+      <class name="tests.LoginTests">
+        <methods>
+          <include name="testRecuperacionContrasena"/>
+        </methods>
+      </class> <!-- tests.LoginTests -->
+    </classes>
+  </test> <!-- IntegrationTests(failed) -->
+  <test thread-count="3" parallel="tests" name="RegressionTests(failed)">
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.ResgisterTests">
+        <methods>
+          <include name="testConfirmacionContrasenaIncorrecta"/>
+          <include name="testCamposObligatoriosFaltantes"/>
+          <include name="testFormatoCorreoInvalido"/>
+        </methods>
+      </class> <!-- tests.ResgisterTests -->
+      <class name="tests.OrderTests">
+        <methods>
+          <include name="testModificarCantidadProductoEnCarrito"/>
+        </methods>
+      </class> <!-- tests.OrderTests -->
+      <class name="tests.LoginTests">
+        <methods>
+          <include name="testLoginCamposEnBlanco"/>
+          <include name="testLoginCredencialesIncorrectas"/>
+          <include name="testLoginExitoso"/>
+          <include name="testCorreoNoRegistrado"/>
+        </methods>
+      </class> <!-- tests.LoginTests -->
+    </classes>
+  </test> <!-- RegressionTests(failed) -->
+  <test thread-count="3" parallel="tests" name="FunctionalTests(failed)">
+    <groups>
+      <run>
+        <include name="functional"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.ResgisterTests">
+        <methods>
+          <include name="testCorreoElectronicoDuplicado"/>
+          <include name="testRegistroExistoso"/>
+          <include name="testConfirmacionContrasenaIncorrecta"/>
+          <include name="testCamposObligatoriosFaltantes"/>
+          <include name="testFormatoCorreoInvalido"/>
+          <include name="testContrasenaDebil"/>
+        </methods>
+      </class> <!-- tests.ResgisterTests -->
+      <class name="tests.OrderTests">
+        <methods>
+          <include name="testAgregarProductoAlCarrito"/>
+          <include name="testCreacionOrdenExitosa"/>
+          <include name="testEliminarProductoDelCarrito"/>
+          <include name="testModificarCantidadProductoEnCarrito"/>
+        </methods>
+      </class> <!-- tests.OrderTests -->
+      <class name="tests.LoginTests">
+        <methods>
+          <include name="testLoginCamposEnBlanco"/>
+          <include name="testRecuperacionContrasena"/>
+          <include name="testLoginCredencialesIncorrectas"/>
+          <include name="testLoginExitoso"/>
+          <include name="testCorreoNoRegistrado"/>
+        </methods>
+      </class> <!-- tests.LoginTests -->
+    </classes>
+  </test> <!-- FunctionalTests(failed) -->
+</suite> <!-- Failed suite [ParallelTestSuite] -->
